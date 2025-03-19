@@ -125,3 +125,49 @@ SHOW SLAVE STATUS\G;
 Выполните конфигурацию master-master репликации. Произведите проверку.
 
 *Приложите скриншоты конфигурации, выполнения работы: состояния и режимы работы серверов.*
+
+<details>
+<summary>Ответ 3</summary>
+
+*Заработал с первого раза*
+
+**На сервере master** 
+
+**Редактируем файл /etc/mysql/my.cnf и перезагружаем сервер**  
+
+```
+bind-address=0.0.0.0
+server_id = 1
+log_bin = mysql-bin
+relay-log = /var/lib/mysql/mysql-relay-bin
+relay-log-index = /var/lib/mysql/mysql-relay-bin.index
+```
+*На slave создаем пользователя с тем же именем и правами как на master, проверяем статус мастера, перед этим убрал из конфига read_only = 1 и перезагрузил*
+
+*На master*
+
+```
+CHANGE MASTER TO MASTER_HOST='192.168.0.9', MASTER_USER='replication', MASTER_PASSWORD='24101967cO', MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=4609;
+START SLAVE;
+SHOW SLAVE STATUS\G;
+```
+![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.2.1.png)  
+---
+
+![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.2.2.png)  
+
+*Последовательно создал две базы на master*
+
+![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.2.3.png)  
+---
+
+![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.2.4.png)  
+
+*Удалил базы на slave*  
+
+![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.2.5.png)  
+---
+
+![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.2.6.png)   
+
+</details>
