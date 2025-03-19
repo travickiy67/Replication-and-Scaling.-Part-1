@@ -25,7 +25,7 @@
 *Ответить в свободной форме.*
 
 <details>
-<summary>Ответ 1</summar>
+<summary>Ответ 1</summary>
 
 **Режим master-slave, подразумевает наличие главного сервера, на котором хранитца эталонная копия БД. Это подразумевает, что изменения могут вносится только на этом сервере и после этого реплицироваться на все slave сервера**
 
@@ -98,10 +98,10 @@ SHOW SLAVE STATUS\G;
 ![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.1.2.png)  
 ---
 
-![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.1.3.png)  
+![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.1.4.png)  
 ---
 
-![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.1.4.png)  
+![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.1.3.png)  
 ---
 
 ![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.1.5.png)  
