@@ -94,19 +94,24 @@ SHOW SLAVE STATUS\G;
 
 *Остальные скрины демонстрирующие создание и удаление базы и таблицы*
 
-![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.1.1.png)  
+![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.1.1.png) 
+ 
 ---
 
-![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.1.2.png)  
+![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.1.2.png) 
+ 
 ---
 
 ![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.1.4.png)  
+
 ---
 
 ![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.1.3.png)  
+
 ---
 
 ![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.1.5.png)  
+
 ---
 
 ![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.1.6.png)  
@@ -152,6 +157,7 @@ START SLAVE;
 SHOW SLAVE STATUS\G;
 ```
 ![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.2.1.png)  
+
 ---
 
 ![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.2.2.png)  
@@ -159,6 +165,7 @@ SHOW SLAVE STATUS\G;
 *Последовательно создал две базы на master*
 
 ![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.2.3.png)  
+
 ---
 
 ![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.2.4.png)  
@@ -166,6 +173,7 @@ SHOW SLAVE STATUS\G;
 *Удалил базы на slave*  
 
 ![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.2.5.png)  
+
 ---
 
 ![img](https://github.com/travickiy67/Replication-and-Scaling.-Part-1/blob/main/img.2.6.png)   
